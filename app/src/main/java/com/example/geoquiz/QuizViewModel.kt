@@ -12,24 +12,39 @@ class QuizViewModel: ViewModel() {
     }
 
     private val questionBank = listOf(
-        Question(R.string.question_australia, true),
-        Question(R.string.question_oceans, true),
-        Question(R.string.question_mideast, false),
-        Question(R.string.question_africa, false),
-        Question(R.string.question_americas, true),
-        Question(R.string.question_asia, true)
+        Question(R.string.question_australia, true, isAnswered = false, isCheated = false),
+        Question(R.string.question_oceans, true, isAnswered = false, isCheated = false),
+        Question(R.string.question_mideast, false, isAnswered = false, isCheated = false),
+        Question(R.string.question_africa, false, isAnswered = false, isCheated = false),
+        Question(R.string.question_americas, true, isAnswered = false, isCheated = false),
+        Question(R.string.question_asia, true, isAnswered = false, isCheated = false)
     )
 
     var currentIndex = 0
-    var isCheater = false
-
-
+    var correctAnswers = 0
+    var incorrectAnswers = 0
+    
     val currentQuestionAnswer: Boolean
         get() = questionBank[currentIndex].answer
 
     val currentQuestionText: Int
         get() = questionBank[currentIndex].textResId
 
+    val isAnswered: Boolean
+        get() = questionBank[currentIndex].isAnswered
+
+    fun getCurrentIsCheated(): Boolean {
+        return questionBank[currentIndex].isCheated
+    }
+    
+    fun setTrueCurrentIsCheated() {
+        questionBank[currentIndex].isCheated = true
+    }
+
+    fun setTrueIsAnswered() {
+        questionBank[currentIndex].isAnswered = true
+    }
+            
     fun moveToNext() {
         currentIndex = (currentIndex + 1) % questionBank.size
     }
