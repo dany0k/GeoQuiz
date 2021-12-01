@@ -2,16 +2,21 @@
     <string name="app_name">GeoQuiz</string>
     <string name="true_button">Правда!</string>
     <string name="false_button">Ложь!</string>
+    <string name="cheat_button">Считерить</string>
+    <string name="show_result_button">Показать результат</string>
+
     <string name="correct_toast">Правильно!</string>
     <string name="incorrect_toast">Не верно!</string>
     <string name="warning_text">Ты правда хочешь сделать это?</string>
     <string name="show_answer_button">Показать ответ</string>
-    <string name="cheat_button">Считерить</string>
     <string name="judgment_toast">Читерство запрещено</string>
-    
+    <string name="question_is_answered_toast">Ты уже ответил на этот вопрос</string>
+    <string name="count_correct_questions_toast">Количество правильных ответов</string>
+    <string name="count_incorrect_questions_toast">Количество неправильных ответов</string>
+
     <string name="next_button">Следущий вопрос</string>
     <string name="prev_button">Предыдущий вопрос</string>
-    
+
     <string name="question_australia">Канберра стллица Австралии</string>>
     <string name="question_oceans">Тихий океан больше чем Атлантический</string>
     <string name="question_mideast">Красное море соединено с Индийским Океаном через Суэцский канал</string>
@@ -20,5 +25,4 @@
     <string name="question_asia">Байкал самое старое и глубокое пресноводное озеро в мире</string>
     <string name="final_text">Вопросы звкончились.</string>>
     <string name="next">Next</string>
-
 </resources>
