@@ -4,8 +4,14 @@
     <string name="false_button">Ложь!</string>
     <string name="correct_toast">Правильно!</string>
     <string name="incorrect_toast">Не верно!</string>
+    <string name="warning_text">Ты правда хочешь сделать это?</string>
+    <string name="show_answer_button">Показать ответ</string>
+    <string name="cheat_button">Считерить</string>
+    <string name="judgment_toast">Читерство запрещено</string>
+    
     <string name="next_button">Следущий вопрос</string>
     <string name="prev_button">Предыдущий вопрос</string>
+    
     <string name="question_australia">Канберра стллица Австралии</string>>
     <string name="question_oceans">Тихий океан больше чем Атлантический</string>
     <string name="question_mideast">Красное море соединено с Индийским Океаном через Суэцский канал</string>
